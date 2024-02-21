@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" verbose="1">
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="Windows 10"/>
+        <classes>
+            <class name="chandu.TestScenario_1"/>
+            <class name="chandu.TestScenario_2"/>
+            <class name="chandu.TestScenario_3"/>
+        </classes>
+    </test>
+    <test name="SafariTest">
+        <parameter name="browser" value="safari"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="macOS Catalina"/>
+        <classes>
+            <class name="chandu.TestScenario_1"/>
+            <class name="chandu.TestScenario_2"/>
+        </classes>
+    </test>
+</suite>
